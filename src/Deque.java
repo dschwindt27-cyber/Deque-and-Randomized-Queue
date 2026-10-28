@@ -110,23 +110,28 @@ public class Deque<Item> implements Iterable<Item> {
         return item;
     }
 
-
     /** Return an iterator from front to back; next() and remove() follow the specified exceptions. */
     @Override
     public Iterator<Item> iterator() {
         // TODO: Return an iterator that follows next links from head to tail.
         return new DequeIterator();
     }
-    private class DequeIterator implements Iterator<Item>{
-        private Node current = head.next;
+    private class DequeIterator implements Iterator<Item> {
+        private Node current = head;
+
         @Override
         public boolean hasNext() {
-            return !current.equals(tail);
+            return current != null;
+        }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
         }
 
         @Override
         public Item next() {
-            if(!hasNext()) {
+            if (!hasNext()) {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
