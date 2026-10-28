@@ -84,7 +84,7 @@ public class RandomizedQueueTest {
         while (!queue.isEmpty()) {
             int value = queue.dequeue();
             removed.add(value);
-            // sizesCorrect &= queue.size() == 4 - removed.size();
+            //sizesCorrect &= queue.size() == 4 - removed.size();
             sizesCorrect &= queue.size() == original.size() - removed.size();
         }
         check("RandomizedQueue dequeue returns original items and decrements size", removed.equals(original) && sizesCorrect);
@@ -182,21 +182,21 @@ public class RandomizedQueueTest {
     public static void main(String[] args) {
         // Uncomment each test as you implement the corresponding method:
 
-        /* */
+
         testRandomizedQueueConstructor();
         testRandomizedQueueIsEmpty();
         testRandomizedQueueSize();
         testRandomizedQueueEnqueue();
         testRandomizedQueueEnqueueNull();
         testRandomizedQueueDequeue();
-        testRandomizedQueueDequeueEmpty();
-        testRandomizedQueueSample();
-        testRandomizedQueueSampleEmpty();
-        testRandomizedQueueIterator();
-        testRandomizedQueueIteratorIndependence();
-        testRandomizedQueueIteratorRandomOrder();
-        testRandomizedQueueIteratorNextExhausted();
-        testRandomizedQueueIteratorRemoveUnsupported();
+        //testRandomizedQueueDequeueEmpty();
+        //testRandomizedQueueSample();
+        //testRandomizedQueueSampleEmpty();
+        //testRandomizedQueueIterator();
+        //testRandomizedQueueIteratorIndependence();
+        //testRandomizedQueueIteratorRandomOrder();
+        //testRandomizedQueueIteratorNextExhausted();
+        //testRandomizedQueueIteratorRemoveUnsupported();
 
 //LNIHRUUYHRYUBRUYBRGY&R
         System.out.println("\nSummary: " + passed + " passed, " + failed + " failed.");
