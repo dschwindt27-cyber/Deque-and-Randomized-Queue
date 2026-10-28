@@ -189,14 +189,14 @@ public class RandomizedQueueTest {
         testRandomizedQueueEnqueue();
         testRandomizedQueueEnqueueNull();
         testRandomizedQueueDequeue();
-        //testRandomizedQueueDequeueEmpty();
-        //testRandomizedQueueSample();
-        //testRandomizedQueueSampleEmpty();
-        //testRandomizedQueueIterator();
-        //testRandomizedQueueIteratorIndependence();
-        //testRandomizedQueueIteratorRandomOrder();
-        //testRandomizedQueueIteratorNextExhausted();
-        //testRandomizedQueueIteratorRemoveUnsupported();
+        testRandomizedQueueDequeueEmpty();
+        testRandomizedQueueSample();
+        testRandomizedQueueSampleEmpty();
+        testRandomizedQueueIterator();
+        testRandomizedQueueIteratorIndependence();
+        testRandomizedQueueIteratorRandomOrder();
+        testRandomizedQueueIteratorNextExhausted();
+        testRandomizedQueueIteratorRemoveUnsupported();
 
 //LNIHRUUYHRYUBRUYBRGY&R
         System.out.println("\nSummary: " + passed + " passed, " + failed + " failed.");
