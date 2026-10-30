@@ -198,7 +198,6 @@ public class RandomizedQueueTest {
         testRandomizedQueueIteratorNextExhausted();
         testRandomizedQueueIteratorRemoveUnsupported();
 
-//LNIHRUUYHRYUBRUYBRGY&R
         System.out.println("\nSummary: " + passed + " passed, " + failed + " failed.");
     }
 }
